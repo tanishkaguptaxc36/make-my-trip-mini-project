@@ -85,13 +85,34 @@
                 <div class="fare_search">
                     <span class="fare_select">Select a special fare
                         <div class="extrasavings">EXTRA SAVINGS</div>
-                    </span>
-                    <div class="fare_type">
-                        <div class="regular">
-                            <input type="radio" class="regular-fare" value="price" checked>
-                            <label 
+                    
+                        
+                        <div class="fare-options">
+                            <label><input type="radio" name="fare" checked> Regular</label>
+                            <label><input type="radio" name="fare"> Student</label>
+                            <label><input type="radio" name="fare"> Senior Citizen</label>
+                            <label><input type="radio" name="fare"> Armed Forces</label>
+                            <label><input type="radio" name="fare"> Doctor and Nurses</label>
                         </div>
 
+                    </span>
+
+                        <script>
+                            const categoryItems = document.querySelectorAll('.categories span');
+                            categoryItems.forEach(item => {
+                                item.addEventListener('mouseover', () => {
+                                    item.style.transform = 'scale(1.1)';
+                                    item.style.transition = 'transform 0.3s ease';
+                                });
+                                item.addEventListener('mouseout', () => {
+                                    item.style.transform = 'scale(1)';
+                                });
+                            });
+                        
+                            
+                            
+                        </script>
+                        
                     </div>
                 </div>
 

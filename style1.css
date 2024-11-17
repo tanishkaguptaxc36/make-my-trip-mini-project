@@ -24,8 +24,6 @@ body{
     display: flex;
     justify-content: center;
     
-
-    
 }
 
 .data{
@@ -119,7 +117,13 @@ body{
     margin:0px;
     padding-left: 30px;
     height:109px;
-    padding-top: 10px;
+    padding-top: 10px;  
+}
+
+.flight:hover {
+    background-color: skyblue; 
+    transform: scale(1.05); 
+    cursor: pointer;
 }
 
 .flight h1{
@@ -128,13 +132,10 @@ body{
 }
 
 .material-symbols-outlined {
-    
-    
     color:rgb(35, 155, 231);
     border-radius:2px solid rgb(198, 191, 191) ;
     align-items: center;
     flex-direction: row;
-    
 }
 
 .fare_search{
@@ -166,6 +167,7 @@ body{
     padding-top: 10px;
 
 }
+
 .action span i{
     color:rgb(30, 164, 247);
     flex-direction: row;
@@ -210,10 +212,6 @@ body{
     padding-top: 6px;
   }
 
-
-
-
-
 .Return{
     margin: 15px;
     color:rgb(32, 32, 32);
@@ -255,15 +253,14 @@ body{
   border: none;
   border-radius: 30px; /* Fully rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  width:216px;
-  
-  
+  width:216px;  
 
 }
 
 
 
-                    
+
+                   
 
 
     
