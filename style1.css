@@ -1,0 +1,277 @@
+
+
+/* Reset body margin to make sure box fills half the page */
+.background {
+    background-color: rgb(232, 232, 232);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #051322, #154571 );
+    background-size: 100% 500px ;
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family: "Lato";
+    color: rgb(95, 94, 94);
+}
+.container{
+    width:1200px;
+
+
+}
+.logo{
+    width:36px;
+    height:36px;
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    
+}
+.categories{
+    background-color: white;
+    width: 1000px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 1px #7a7a7a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    z-index: 2; /* to make categories card above the ticket card */
+    
+    
+}
+
+.categories span{
+     font-size:14px ;
+     padding: 10px;
+     padding-top: 20px;
+     display:flex ;
+     align-items: center;
+     flex-direction: column;
+     
+
+}
+.hotel{
+    margin-top: 5px;
+}
+
+.bx {
+    font-size: 45px;
+    margin-bottom: 5px;
+
+}
+.tickets{
+    background-color: white;
+    width: 1200px;
+    height:300px;
+    position:absolute;
+    top:70px;
+    border-radius: 10px;
+    padding:15px;
+
+}
+.ticket-type{
+    margin-top: 50px;
+
+}
+
+
+.ticket-type {
+    
+    font-size: 14px;
+    font-weight: 800;
+}
+#One_Way{
+    background-color: rgb(209 242 250);
+    border-radius: 20px;
+
+}
+#Round_Trip{
+    background-color: rgb(209 242 250);
+    border-radius: 20px;
+
+}
+#Multi_City{
+    background-color: rgb(209 242 250);
+    border-radius: 20px;
+
+}
+
+.flight-search {
+    border: 0.1px solid rgb(227, 227, 227);
+    display:flex;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.flight{
+    margin: 15px;
+    color:rgb(32, 32, 32);
+    width:300px;
+    border-right:1px solid rgb(221, 221, 221);
+    margin:0px;
+    padding-left: 30px;
+    height:109px;
+    padding-top: 10px;
+}
+
+.flight h1{
+    margin:0px;
+    font-weight: 800;
+}
+
+.material-symbols-outlined {
+    
+    
+    color:rgb(35, 155, 231);
+    border-radius:2px solid rgb(198, 191, 191) ;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.fare_search{
+    margin-top:20px;
+}
+.fare_select{
+    font-weight: 800 ;
+    color: rgb(18, 16, 16);
+}
+.extrasavings{
+    flex-direction: column;
+    margin-top: 2px;
+    padding-top: 10px;
+    background:linear-gradient(to right,rgb(115, 205, 171),rgb(79, 173, 150),rgb(75, 158, 132));
+    width:140px;
+    border-radius: 6px ;
+    color:white;
+    text-align: center;
+    height:30px;
+}  
+.action{
+    margin: 15px;
+    color:rgb(32, 32, 32);
+    width:120px;
+    border-right:1px solid rgb(221, 221, 221);
+    margin:0px;
+    padding-left: 30px;
+    height:109px;
+    padding-top: 10px;
+
+}
+.action span i{
+    color:rgb(30, 164, 247);
+    flex-direction: row;
+    font-size: 18px;
+    margin:2px;
+    padding:0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .date {
+    font-size: 26px;
+    font-weight:900;
+    line-height: 1;
+    padding-top: 5px;
+  }
+  .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .subtext {
+    font-size: 12px;
+    color: #888;
+    padding-top: 5px;
+  }
+  .placeholder {
+    font-size: 12px;
+    color: #888;
+    font-weight: 700;
+    padding-top: 5px;
+  }
+
+  .header{
+    padding-top: 5px;
+  }
+  .traveller {
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 6px;
+  }
+
+
+
+
+
+.Return{
+    margin: 15px;
+    color:rgb(32, 32, 32);
+    width:120px;
+    border-right:1px solid rgb(221, 221, 221);
+    margin:0px;
+    padding-left: 30px;
+    height:109px;
+    padding-top: 10px;
+
+}
+.Return span i{
+    color:rgb(30, 164, 247);
+    flex-direction: row;
+    font-size: 18px;
+    margin:2px;
+    padding:0px;
+}
+.Travellers span i{
+    color:rgb(30, 164, 247);
+    flex-direction: row;
+    font-size: 18px;
+    margin:2px;
+    padding:0px;
+}
+.search{
+    padding-left: 530px;
+   
+    opacity:1;
+
+    
+}
+.searchbutton{
+  padding: 10px 10px 10px 10px;
+  font-size: 24px;
+  font-weight:bolder;
+  color: white;
+  background: linear-gradient(90deg, #4c9fff, #007bff); /* Gradient background */
+  border: none;
+  border-radius: 30px; /* Fully rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width:216px;
+  
+  
+
+}
+
+
+
+                    
+
+
+    
+  
+
+
+   
+   
+
+
+
