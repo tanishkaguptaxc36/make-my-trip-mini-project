@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Selection</title>
+    <style>
+        body {
+            background-color: rgb(194, 226, 226);
+        }
+    </style>
+    <link rel="stylesheet" href="flight_selection.css">
+</head>
+<body>
+    <div id="card_1" style="background-color: whitesmoke; margin-bottom: 20px;">
+        <div style="display: flex;">
+            <div style="margin-right: 100px;height: 120px;">
+                <img src="\resources\Individual images\Air india.GIF" alt="Air India">               
+                <p id="flightName_1">Air India</p>
+                <p id="flightCode_1">AI 2983</p>
+            </div>
+            <div style="margin-right: 100px;height: 120px;">
+                <p id="departureTime_1">2:30</p>
+                <p id="departureFrom_1">New Delhi</p>
+            </div>
+            <div style="margin-right: 100px;height: 120px;">
+                <p id="timeDuration_1">02 h 15m</p>
+                <img src="../../resources/Individual images/underline.png" alt="dividing line">
+                <p id="flightType_1">Non Stop</p>
+            </div>
+            <div style="margin-right: 100px;height: 120px;">
+                <p id="arrivingTime_1">04:45</p>
+                <p id="arrivingTo_1">Mumbai</p>
+            </div>
+            <div>
+                <p id="flightPrice_1">RS 12,349</p>
+                <p>per adult</p>
+            </div>
+            <button id="viewPrices_1" style="border-radius: 20px;height: fit-content;align-self: center;">
+                VIEW PRICES
+            </button>
+        </div>
+        <button id="button1" type="button" onclick="toggleDetails(1)" class="detail_button" style="align-self: center;">Show Flight Details</button>
+        <p id="flight_details1" class="hidden">HELLO1</p>
+    </div>
