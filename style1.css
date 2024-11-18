@@ -15,8 +15,8 @@ body{
     width:1200px;
 }
 .logo{
-    width: 150px;
-    height:100px;
+    width: 180px;
+    height:120px;
     display: flex;
     justify-content: center;    
 }
@@ -239,8 +239,9 @@ body{
   cursor: pointer;
 } 
 
-.searchbutton:hover {
-    background-color: #0056b3;
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .categories {
@@ -296,6 +297,36 @@ body{
     color: #fff;
 }
 
+.fltSwipCircle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white; 
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+}
+
+.flightsSprite.fltSwipIcon {
+    width: 40px;
+    height: 40px;
+    background-image: url('./icons/arrow 3.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+/* .fltSwipCircle:hover {
+    background-color: #2980b9; 
+    transform: scale(1.1);
+}
+
+.fltSwipCircle:hover .flightsSprite.fltSwipIcon {
+    opacity: 0.8; 
+} */
 
 
 

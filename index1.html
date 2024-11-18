@@ -90,10 +90,11 @@
                         <h1>Delhi</h1>
                         <span>DEL, Delhi Airport India</span>
                     </div>
-
+                    <div>
                     <span class="fltSwipCircle">
                         <span class="flightsSprite fltSwipIcon"></span>
                     </span>
+                    </div>
                     
                     <div class="flight">
                         <span> To</span>
@@ -134,13 +135,25 @@
                             <label><input type="radio" name="fare"> Armed Forces</label>
                             <label><input type="radio" name="fare"> Doctor and Nurses</label>
                         </div>
+
+                        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                            search
+                        </button>
+                        
+                        <p id="demo"></p>
+                        
                         <div class="search">
-                            <button class="searchbutton">SEARCH</button>
+                            <button class="searchbutton" onclick="searchFunction()">SEARCH</button>
                         </div>
+
+                        <!-- <div class="search">
+                            <button class="searchbutton">SEARCH</button>
+                        </div> -->
 
                     </span>
 
                         <script>
+                            
                             const categoryItems = document.querySelectorAll('.categories span');
                             categoryItems.forEach(item => {
                                 item.addEventListener('mouseover', () => {
@@ -151,13 +164,17 @@
                                     item.style.transform = 'scale(1)';
                                 });
                             });
-                            const searchButton = document.getElementById('searchButton');
-                        searchButton.addEventListener('click', () => {
-                        alert('Search button clicked!');
-                        console.log('Search initiated!');
-                        });
                             
+                            function searchFunction() {
+                            document.getElementById('demo').innerHTML = 'Search button clicked!';
+                            }
                             
+
+                            <button type="button"
+                            onclick="document.getElementById('demo').innerHTML = Date()">
+                            Click me to display Date and Time.</button>
+                            
+
                         </script>
                         
                     </div>
@@ -171,7 +188,5 @@
 
 
 </body>
-
-
 
 </html>
