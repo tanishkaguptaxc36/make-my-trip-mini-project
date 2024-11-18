@@ -1,11 +1,9 @@
-
-
-/* Reset body margin to make sure box fills half the page */
 .background {
     background-color: rgb(232, 232, 232);
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, #051322, #154571 );
-    background-size: 100% 500px ;
+    /* background-image: linear-gradient(to bottom, #051322, #154571 ); */
+    background-image: url('./icons/bg\ img.jpg');
+    background-size: 100% 600px ;
     display: flex;
     justify-content: center;
 }
@@ -15,22 +13,18 @@ body{
 }
 .container{
     width:1200px;
-
-
 }
 .logo{
-    width:36px;
-    height:36px;
+    width: 150px;
+    height:100px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .data{
     display: flex;
     justify-content: center;
-    position:relative;
-    
+    position:relative;   
 }
 .categories{
     background-color: white;
@@ -41,9 +35,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items:center;
-    z-index: 2; /* to make categories card above the ticket card */
-    
-    
+    z-index: 2;  
 }
 
 .categories span{
@@ -53,8 +45,6 @@ body{
      display:flex ;
      align-items: center;
      flex-direction: column;
-     
-
 }
 .hotel{
     margin-top: 5px;
@@ -63,7 +53,6 @@ body{
 .bx {
     font-size: 45px;
     margin-bottom: 5px;
-
 }
 .tickets{
     background-color: white;
@@ -77,10 +66,7 @@ body{
 }
 .ticket-type{
     margin-top: 50px;
-
 }
-
-
 .ticket-type {
     
     font-size: 14px;
@@ -165,7 +151,6 @@ body{
     padding-left: 30px;
     height:109px;
     padding-top: 10px;
-
 }
 
 .action span i{
@@ -239,23 +224,80 @@ body{
 }
 .search{
     padding-left: 530px;
-   
-    opacity:1;
-
-    
+    opacity:1;   
 }
 .searchbutton{
   padding: 10px 10px 10px 10px;
   font-size: 24px;
   font-weight:bolder;
   color: white;
-  background: linear-gradient(90deg, #4c9fff, #007bff); /* Gradient background */
+  background: linear-gradient(90deg, #4c9fff, #007bff); 
   border: none;
-  border-radius: 30px; /* Fully rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 30px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   width:216px;  
+  cursor: pointer;
+} 
 
+.searchbutton:hover {
+    background-color: #0056b3;
 }
+
+.categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.category-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.hover-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #007bff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category-item:hover .hover-line {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ticket-type label {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ticket-type label:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.ticket-type input[type="radio"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
 
 
 

@@ -20,7 +20,7 @@
 
 <body class="background">
     <div class="container">
-        <img class="logo" src="makemytrip_logo.png">
+        <img class="logo" src="./icons/mmt_logo_2.png">
         <div class="data">
             <!-- <div class="categories">
                 <span><img class="flights" href src="./icons/flight.png"> Flights</span>
@@ -82,7 +82,6 @@
                     <label for="Round Trip">ROUND TRIP</label>
                     <input type="radio" id="Multi_City" name="ticket" value="Multi City">
                     <label for="Multi City">MULTI CITY</label>
-
                 </div>
 
                 <div class="flight-search">
@@ -151,7 +150,11 @@
                                     item.style.transform = 'scale(1)';
                                 });
                             });
-                        
+                            const searchButton = document.getElementById('searchButton');
+                        searchButton.addEventListener('click', () => {
+                        alert('Search button clicked!');
+                        console.log('Search initiated!');
+                        });
                             
                             
                         </script>
